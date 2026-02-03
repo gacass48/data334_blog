@@ -1,0 +1,30 @@
+---
+title: "2/7 Blog"
+author: "Gavin Cassidy"
+date: "2/7/2026"
+format: html
+---
+
+Hello and Welcome to my first Data Visualization Blog. I would like to thank you for your interest and hope you stick around to see where this blog will go.
+
+Today's Topic: 2024/2025 Premier League Season Statistics
+
+Today we will be looking into player statistics from the 2024/2025 Premier League season. Our data set comes from the [Score Sports Data Repository](https://data.scorenetwork.org/soccer/epl-player-stats-2425.html) which features a number of sports data sets available for anybody to use. There is also learning materials provided for different data sets with different levels of difficulty.
+
+
+```{r}
+library(tidyverse)
+library(here)
+prem_data <- read.csv('data/epl_player_stats_24_25.csv')
+
+prem_data
+```
+
+This data set has 562 rows and 57 columns, each row represents the statistics for a player for the 2024/25 season. Each row has information like player name, club, nationality, position, and statistics about their time played and different performance metrics. More information about each variable available can be found on it [data repository page](https://data.scorenetwork.org/soccer/epl-player-stats-2425.html).
+
+
+```{r}
+prem_data |> group_by(Position)
+```
+
+
