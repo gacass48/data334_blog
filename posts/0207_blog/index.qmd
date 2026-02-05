@@ -15,16 +15,22 @@ Today we will be looking into player statistics from the 2024/2025 Premier Leagu
 ```{r}
 library(tidyverse)
 library(here)
-prem_data <- read.csv('data/epl_player_stats_24_25.csv')
+prem_data <- read.csv(here('docs/posts/0207_blog/data/epl_player_stats_24_25.csv'))
 
 prem_data
 ```
 
-This data set has 562 rows and 57 columns, each row represents the statistics for a player for the 2024/25 season. Each row has information like player name, club, nationality, position, and statistics about their time played and different performance metrics. More information about each variable available can be found on it [data repository page](https://data.scorenetwork.org/soccer/epl-player-stats-2425.html).
+This data set has 562 rows and 57 columns, and each row represents the statistics for a player for the 2024/25 season. Each row has information like player name, club, nationality, position, and statistics about their time played and different performance metrics. There are attacking, defending, conduct, goalkeeping, and playing time. More information about each individual variable available can be found on it [data repository page](https://data.scorenetwork.org/soccer/epl-player-stats-2425.html).
 
 
 ```{r}
 prem_data |> group_by(Position)
 ```
+
+
+```{r}
+
+```
+
 
 
