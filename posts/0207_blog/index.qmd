@@ -54,6 +54,7 @@ attacking_data <- prem_data |> select(Player.Name, Position, Club, Goals, Assist
 
 
 ```{r}
+#| warning: false
 goal_plot <- attacking_data |> group_by(Position, Club) |> summarise(Goals = sum(Goals)) |> ungroup() |> group_by(Club) |> mutate(tot_goals = sum(Goals)) |> arrange(desc(tot_goals))
 
 ggplot(data = goal_plot, aes(x = fct_reorder(Club, tot_goals), y = Goals, fill = Position)) +
@@ -67,6 +68,7 @@ In this plot the goal scoring totals almost mirror the final table, with Liverpo
 
 
 ```{r}
+#| warning: false
 assist_plot <- attacking_data |> group_by(Position, Club) |> summarise(Assists = sum(Assists)) |> ungroup() |> group_by(Club) |> mutate(tot_assists = sum(Assists))
 
 
@@ -82,6 +84,7 @@ From this plot, we can see that Liverpool midfielders are very good at creating 
 
 
 ```{r}
+#| warning: false
 shots_plot <- attacking_data |> group_by(Position, Club) |> summarise(Shots = sum(Shots)) |> ungroup() |> group_by(Club) |> mutate(shots_tot = sum(Shots))
 
 
@@ -97,6 +100,7 @@ This plot shows that more shots tend to generate more goals, as we see teams tha
 
 
 ```{r}
+#| warning: false
 carries_plot <- attacking_data |> group_by(Position, Club) |> summarise(Progressive.Carries = sum(Progressive.Carries)) |> ungroup() |> group_by(Club) |> mutate(pro_tot = sum(Progressive.Carries))
 
 
@@ -117,6 +121,7 @@ This plot is very interesting, as it has very different trends. Southampton goes
 Across these plots, we can see different trends seeming to depend on the tactics of a team. Overall, teams that get production out of their Midfielders tend to be successful, and their is less impact from Attackers and Defenders. However, a team like Man City who has the best Attacker impact doesn't need as much production from their Midfield to compete. Scoring isn't necessarily an indicator of league position either, as some high scoring and high shooting teams finished much further down the table. The Progressive Carries stat is also interesting, as for some teams like Southamton, Liverpool, Nottingham Forest, or Tottenham, it is not an indicator of success, but for others like Man City or Arsenal it is. All positions play their role on the pitch, but the Midfield appears to have the biggest impact in scoring and producing goals for team success. Finally we will look at Goals + Assists, and see which teams are the strongest.
 
 ```{r}
+#| warning: false
 ag_plot <- attacking_data |> group_by(Position, Club) |> summarise(Goals = sum(Goals), Assists = sum(Assists), ag = sum(Goals + Assists)) |> ungroup() |> group_by(Club) |> mutate(tot_ag = sum(Goals + Assists)) |> arrange(desc(tot_ag))
 ```
 
