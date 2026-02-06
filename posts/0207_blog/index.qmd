@@ -47,7 +47,8 @@ Progressive Carries: Number of carries where the player progressed significantly
 
 
 ```{r}
-attacking_data <- prem_data |> select(Player.Name, Position, Club, Goals, Assists, Shots, Progressive.Carries)
+attacking_data <- prem_data |> select(Player.Name, Position, Club, Goals,
+                                      Assists, Shots, Progressive.Carries)
 
 ```
 
@@ -55,9 +56,15 @@ attacking_data <- prem_data |> select(Player.Name, Position, Club, Goals, Assist
 
 ```{r}
 #| warning: false
-goal_plot <- attacking_data |> group_by(Position, Club) |> summarise(Goals = sum(Goals)) |> ungroup() |> group_by(Club) |> mutate(tot_goals = sum(Goals)) |> arrange(desc(tot_goals))
+goal_plot <- attacking_data |> group_by(Position, Club) |> 
+  summarise(Goals = sum(Goals)) |> 
+  ungroup() |> 
+  group_by(Club) |> 
+  mutate(tot_goals = sum(Goals)) |> 
+  arrange(desc(tot_goals))
 
-ggplot(data = goal_plot, aes(x = fct_reorder(Club, tot_goals), y = Goals, fill = Position)) +
+ggplot(data = goal_plot, aes(x = fct_reorder(Club, tot_goals), 
+                             y = Goals, fill = Position)) +
   geom_col() +
   coord_flip() +
   theme_minimal() +
@@ -69,10 +76,16 @@ In this plot the goal scoring totals almost mirror the final table, with Liverpo
 
 ```{r}
 #| warning: false
-assist_plot <- attacking_data |> group_by(Position, Club) |> summarise(Assists = sum(Assists)) |> ungroup() |> group_by(Club) |> mutate(tot_assists = sum(Assists))
+assist_plot <- attacking_data |> 
+  group_by(Position, Club) |> 
+  summarise(Assists = sum(Assists)) |> 
+  ungroup() |> 
+  group_by(Club) |> 
+  mutate(tot_assists = sum(Assists))
 
 
-ggplot(data = assist_plot, aes(x = fct_reorder(Club, tot_assists), y = Assists, fill = Position)) +
+ggplot(data = assist_plot, aes(x = fct_reorder(Club, tot_assists), 
+                               y = Assists, fill = Position)) +
   geom_col() +
   coord_flip() +
   theme_minimal() +
@@ -85,10 +98,16 @@ From this plot, we can see that Liverpool midfielders are very good at creating 
 
 ```{r}
 #| warning: false
-shots_plot <- attacking_data |> group_by(Position, Club) |> summarise(Shots = sum(Shots)) |> ungroup() |> group_by(Club) |> mutate(shots_tot = sum(Shots))
+shots_plot <- attacking_data |> 
+  group_by(Position, Club) |> 
+  summarise(Shots = sum(Shots)) |> 
+  ungroup() |> 
+  group_by(Club) |> 
+  mutate(shots_tot = sum(Shots))
 
 
-ggplot(data = shots_plot, aes(x = fct_reorder(Club, shots_tot), y = Shots, fill = Position)) +
+ggplot(data = shots_plot, aes(x = fct_reorder(Club, shots_tot), 
+                              y = Shots, fill = Position)) +
   geom_col() +
   coord_flip() +
   theme_minimal() +
@@ -101,10 +120,16 @@ This plot shows that more shots tend to generate more goals, as we see teams tha
 
 ```{r}
 #| warning: false
-carries_plot <- attacking_data |> group_by(Position, Club) |> summarise(Progressive.Carries = sum(Progressive.Carries)) |> ungroup() |> group_by(Club) |> mutate(pro_tot = sum(Progressive.Carries))
+carries_plot <- attacking_data |> 
+  group_by(Position, Club) |> 
+  summarise(Progressive.Carries = sum(Progressive.Carries)) |> 
+  ungroup() |> 
+  group_by(Club) |>
+  mutate(pro_tot = sum(Progressive.Carries))
 
 
-ggplot(data = carries_plot, aes(x = fct_reorder(Club, pro_tot), y = Progressive.Carries, fill = Position)) +
+ggplot(data = carries_plot, aes(x = fct_reorder(Club, pro_tot),
+                                y = Progressive.Carries, fill = Position)) +
   geom_col() +
   coord_flip() +
   theme_minimal() +
@@ -122,13 +147,22 @@ Across these plots, we can see different trends seeming to depend on the tactics
 
 ```{r}
 #| warning: false
-ag_plot <- attacking_data |> group_by(Position, Club) |> summarise(Goals = sum(Goals), Assists = sum(Assists), ag = sum(Goals + Assists)) |> ungroup() |> group_by(Club) |> mutate(tot_ag = sum(Goals + Assists)) |> arrange(desc(tot_ag))
+ag_plot <- attacking_data |> 
+  group_by(Position, Club) |> 
+  summarise(Goals = sum(Goals), 
+            Assists = sum(Assists), 
+            ag = sum(Goals + Assists)) |> 
+  ungroup() |> 
+  group_by(Club) |> 
+  mutate(tot_ag = sum(Goals + Assists)) |> 
+  arrange(desc(tot_ag))
 ```
 
 
 
 ```{r}
-ggplot(data = ag_plot, aes(x = fct_reorder(Club, tot_ag), y = ag, fill = Position)) +
+ggplot(data = ag_plot, aes(x = fct_reorder(Club, tot_ag), 
+                           y = ag, fill = Position)) +
   geom_col() +
   coord_flip() +
   theme_minimal() +
