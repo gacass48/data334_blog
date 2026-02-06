@@ -68,7 +68,8 @@ ggplot(data = goal_plot, aes(x = fct_reorder(Club, tot_goals),
   geom_col() +
   coord_flip() +
   theme_minimal() +
-  labs(x = "Club", title = "Goals by Position")
+  labs(x = "Club", title = "Goals by Position") +
+  scale_fill_viridis_d()
 ```
 
 In this plot the goal scoring totals almost mirror the final table, with Liverpool on top and teams like Man City, Arsenal, Chelsea, and Newcastle United close behind. Some interesting teams are Tottenham Hotspur who finished 17th, yet were in the middle of the scoring totals, and Bournemouth, who finished 9th and are 18th in scoring total. When it comes to scoring from different positions, we can see that the League winners and scoring leaders Liverpool get significant contributions from their Midfield, and less from their attackers, while 3rd place Manchester City rely heavily on Forwards. My team, Nottingham Forest relied heavily on their Striker, shown clearly by having the lowest Midfield scoring total relative to their companions on the list. Chelsea is also interesting, as they get more goals from defense then most, and have very few goals from the Forwards. Everton, like Man City relies heavily on the Attackers, and has close to the least goals from their Midfield. Next we will look at Assists, and see which positions are the best at creating goals for their teammates.
@@ -89,7 +90,8 @@ ggplot(data = assist_plot, aes(x = fct_reorder(Club, tot_assists),
   geom_col() +
   coord_flip() +
   theme_minimal() +
-  labs(x = "Club", title = "Assists by Position")
+  labs(x = "Club", title = "Assists by Position") +
+  scale_fill_viridis_d()
 ```
 
 From this plot, we can see that Liverpool midfielders are very good at creating chances for their teammates, having the most assists as well. The defenders also have a good chunk of assists, showing that having a versatile team when it comes to creating chances is important. Arsenal also has a strong midfield core, as do other Nottingham Forest, and Aston Villa. Newcastle interestingly cannot rely on their Attackers to create chances for others, which cannot be reliable at this level. Fulham has the best distribution between postions, with strong defenders and a goalkeeper assist. Man City, and Brighton are the interesting outliers here, as the drop from to 5 goal scorers to bottom half assisting teams, with lackluster totals from the midfield and other positions. Next we will look at what positions on the field generate the most shots for each team.
@@ -111,7 +113,8 @@ ggplot(data = shots_plot, aes(x = fct_reorder(Club, shots_tot),
   geom_col() +
   coord_flip() +
   theme_minimal() +
-  labs(x = "Club", title = "Shots by Position")
+  labs(x = "Club", title = "Shots by Position") +
+  scale_fill_viridis_d()
 ```
 
 This plot shows that more shots tend to generate more goals, as we see teams that top the goal chart again. Man City and Liverpool have the same balance of Midfield vs Forward, with each leaning on what appears to be their strengths. Bournemouth is very interesting here as they go from bottom 3 scoring teams to top 4 shooting teams, with a incredibly high amount of midfield shots, potentially indicating shots from poor positions. Aresenal has a lower shot tota, especially for their goal total, as do Nottingham Forest. Southampton has the least shots from their Midfielders, as they again are low on the list for offensive impact. No team is as reliant on their Forwards for scoring as Manchester City, a possible reason for their decline during this season. Next we will look at Progessive Carries and see what type of players are best at advancing the ball for their teams.
@@ -134,7 +137,8 @@ ggplot(data = carries_plot, aes(x = fct_reorder(Club, pro_tot),
   coord_flip() +
   theme_minimal() +
   labs(x = "Club", y = "Progressive Carries", 
-       title = "Progressive Carries by Position")
+       title = "Progressive Carries by Position") +
+  scale_fill_viridis_d()
 ```
 
 
@@ -166,7 +170,9 @@ ggplot(data = ag_plot, aes(x = fct_reorder(Club, tot_ag),
   geom_col() +
   coord_flip() +
   theme_minimal() +
-  labs(x = "Club", y = "Goals + Assists", title = "Goals + Assists by Position")
+  labs(x = "Club", y = "Goals + Assists", 
+       title = "Goals + Assists by Position") +
+  scale_fill_viridis_d()
 ```
 
 This plot shows the dominance of the Midfield position in producing goals, with a large proportion of most teams goals and assists coming from Midfield players. Overall, the trend of being reliant and hoping for Midfield goals has shown to be important for top teams. An interesting next step to take with this analysis would be to look at data from recent and non-recent seasons to see if this trend of Midfield production is recent or has been prevalent throughout the history of the premier league.
