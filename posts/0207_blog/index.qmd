@@ -1,7 +1,7 @@
 ---
-title: "2/7 Blog"
+title: "2/6 Blog"
 author: "Gavin Cassidy"
-date: "2/7/2026"
+date: "2/6/2026"
 format: html
 ---
 
