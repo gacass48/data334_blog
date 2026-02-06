@@ -173,6 +173,7 @@ This plot shows the dominance of the Midfield position in producing goals, with 
 
 
 
+For these plots, I chose to use the Stacked Barplot to have a direct comparison both across teams, and across positions. With the position being the main category of interest, being able to see that Liverpool or Arsenal got more contribution from their Midfield was easier in this format than in a faceted barplot. If we weren't interested in specific teams than other plots could be used to visualize differences in production by positions as the whole league, like a boxplot or dotplot. The issue here is the differences between teams, where a low scoring team like Southampton has less goals from their Midfield and Attack than Liverpool gets from their defense. Using this plot, we can take the production of each position with the context of their teams overall production and success during the season. 
 
 
 
