@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Gavin Cassidy">
-<meta name="dcterms.date" content="2026-02-07">
+<meta name="dcterms.date" content="2026-02-06">
 
-<title>2/7 Blog – data334_blog</title>
+<title>2/6 Blog – data334_blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -149,7 +149,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">2/7 Blog</h1>
+      <h1 class="title">2/6 Blog</h1>
                       </div>
   </div>
     
@@ -166,7 +166,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 7, 2026</p>
+        <p class="date">February 6, 2026</p>
       </div>
     </div>
     
@@ -239,16 +239,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>To answer this question we will look at Goals, Assists, Shots, and Progressive Carries, using these statistics to see which teams have offensive contributions from their defensive players.</p>
 <p>Goals: Number of goals scored by a player Assists: Number of goals assisted by a player Shots: Number of shots by a player Progressive Carries: Number of carries where the player progressed significantly with the ball</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>attacking_data <span class="ot">&lt;-</span> prem_data <span class="sc">|&gt;</span> <span class="fu">select</span>(Player.Name, Position, Club, Goals, Assists, Shots, Progressive.Carries)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>attacking_data <span class="ot">&lt;-</span> prem_data <span class="sc">|&gt;</span> <span class="fu">select</span>(Player.Name, Position, Club, Goals,</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                                      Assists, Shots, Progressive.Carries)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>goal_plot <span class="ot">&lt;-</span> attacking_data <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Position, Club) <span class="sc">|&gt;</span> <span class="fu">summarise</span>(<span class="at">Goals =</span> <span class="fu">sum</span>(Goals)) <span class="sc">|&gt;</span> <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Club) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">tot_goals =</span> <span class="fu">sum</span>(Goals)) <span class="sc">|&gt;</span> <span class="fu">arrange</span>(<span class="fu">desc</span>(tot_goals))</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> goal_plot, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_reorder</span>(Club, tot_goals), <span class="at">y =</span> Goals, <span class="at">fill =</span> Position)) <span class="sc">+</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Club"</span>, <span class="at">title =</span> <span class="st">"Goals by Position"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>goal_plot <span class="ot">&lt;-</span> attacking_data <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Position, Club) <span class="sc">|&gt;</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Goals =</span> <span class="fu">sum</span>(Goals)) <span class="sc">|&gt;</span> </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Club) <span class="sc">|&gt;</span> </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">tot_goals =</span> <span class="fu">sum</span>(Goals)) <span class="sc">|&gt;</span> </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(tot_goals))</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> goal_plot, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_reorder</span>(Club, tot_goals), </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>                             <span class="at">y =</span> Goals, <span class="at">fill =</span> Position)) <span class="sc">+</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Club"</span>, <span class="at">title =</span> <span class="st">"Goals by Position"</span>) <span class="sc">+</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_d</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -259,14 +267,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>In this plot the goal scoring totals almost mirror the final table, with Liverpool on top and teams like Man City, Arsenal, Chelsea, and Newcastle United close behind. Some interesting teams are Tottenham Hotspur who finished 17th, yet were in the middle of the scoring totals, and Bournemouth, who finished 9th and are 18th in scoring total. When it comes to scoring from different positions, we can see that the League winners and scoring leaders Liverpool get significant contributions from their Midfield, and less from their attackers, while 3rd place Manchester City rely heavily on Forwards. My team, Nottingham Forest relied heavily on their Striker, shown clearly by having the lowest Midfield scoring total relative to their companions on the list. Chelsea is also interesting, as they get more goals from defense then most, and have very few goals from the Forwards. Everton, like Man City relies heavily on the Attackers, and has close to the least goals from their Midfield. Next we will look at Assists, and see which positions are the best at creating goals for their teammates.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>assist_plot <span class="ot">&lt;-</span> attacking_data <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Position, Club) <span class="sc">|&gt;</span> <span class="fu">summarise</span>(<span class="at">Assists =</span> <span class="fu">sum</span>(Assists)) <span class="sc">|&gt;</span> <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Club) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">tot_assists =</span> <span class="fu">sum</span>(Assists))</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> assist_plot, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_reorder</span>(Club, tot_assists), <span class="at">y =</span> Assists, <span class="at">fill =</span> Position)) <span class="sc">+</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Club"</span>, <span class="at">title =</span> <span class="st">"Assists by Position"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>assist_plot <span class="ot">&lt;-</span> attacking_data <span class="sc">|&gt;</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Position, Club) <span class="sc">|&gt;</span> </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Assists =</span> <span class="fu">sum</span>(Assists)) <span class="sc">|&gt;</span> </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Club) <span class="sc">|&gt;</span> </span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">tot_assists =</span> <span class="fu">sum</span>(Assists))</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> assist_plot, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_reorder</span>(Club, tot_assists), </span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>                               <span class="at">y =</span> Assists, <span class="at">fill =</span> Position)) <span class="sc">+</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Club"</span>, <span class="at">title =</span> <span class="st">"Assists by Position"</span>) <span class="sc">+</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_d</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -277,14 +292,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>From this plot, we can see that Liverpool midfielders are very good at creating chances for their teammates, having the most assists as well. The defenders also have a good chunk of assists, showing that having a versatile team when it comes to creating chances is important. Arsenal also has a strong midfield core, as do other Nottingham Forest, and Aston Villa. Newcastle interestingly cannot rely on their Attackers to create chances for others, which cannot be reliable at this level. Fulham has the best distribution between postions, with strong defenders and a goalkeeper assist. Man City, and Brighton are the interesting outliers here, as the drop from to 5 goal scorers to bottom half assisting teams, with lackluster totals from the midfield and other positions. Next we will look at what positions on the field generate the most shots for each team.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>shots_plot <span class="ot">&lt;-</span> attacking_data <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Position, Club) <span class="sc">|&gt;</span> <span class="fu">summarise</span>(<span class="at">Shots =</span> <span class="fu">sum</span>(Shots)) <span class="sc">|&gt;</span> <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Club) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">shots_tot =</span> <span class="fu">sum</span>(Shots))</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> shots_plot, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_reorder</span>(Club, shots_tot), <span class="at">y =</span> Shots, <span class="at">fill =</span> Position)) <span class="sc">+</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Club"</span>, <span class="at">title =</span> <span class="st">"Shots by Position"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>shots_plot <span class="ot">&lt;-</span> attacking_data <span class="sc">|&gt;</span> </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Position, Club) <span class="sc">|&gt;</span> </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Shots =</span> <span class="fu">sum</span>(Shots)) <span class="sc">|&gt;</span> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Club) <span class="sc">|&gt;</span> </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">shots_tot =</span> <span class="fu">sum</span>(Shots))</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> shots_plot, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_reorder</span>(Club, shots_tot), </span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>                              <span class="at">y =</span> Shots, <span class="at">fill =</span> Position)) <span class="sc">+</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Club"</span>, <span class="at">title =</span> <span class="st">"Shots by Position"</span>) <span class="sc">+</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_d</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -295,15 +317,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>This plot shows that more shots tend to generate more goals, as we see teams that top the goal chart again. Man City and Liverpool have the same balance of Midfield vs Forward, with each leaning on what appears to be their strengths. Bournemouth is very interesting here as they go from bottom 3 scoring teams to top 4 shooting teams, with a incredibly high amount of midfield shots, potentially indicating shots from poor positions. Aresenal has a lower shot tota, especially for their goal total, as do Nottingham Forest. Southampton has the least shots from their Midfielders, as they again are low on the list for offensive impact. No team is as reliant on their Forwards for scoring as Manchester City, a possible reason for their decline during this season. Next we will look at Progessive Carries and see what type of players are best at advancing the ball for their teams.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>carries_plot <span class="ot">&lt;-</span> attacking_data <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Position, Club) <span class="sc">|&gt;</span> <span class="fu">summarise</span>(<span class="at">Progressive.Carries =</span> <span class="fu">sum</span>(Progressive.Carries)) <span class="sc">|&gt;</span> <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Club) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">pro_tot =</span> <span class="fu">sum</span>(Progressive.Carries))</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> carries_plot, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_reorder</span>(Club, pro_tot), <span class="at">y =</span> Progressive.Carries, <span class="at">fill =</span> Position)) <span class="sc">+</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Club"</span>, <span class="at">y =</span> <span class="st">"Progressive Carries"</span>, </span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Progressive Carries by Position"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>carries_plot <span class="ot">&lt;-</span> attacking_data <span class="sc">|&gt;</span> </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Position, Club) <span class="sc">|&gt;</span> </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Progressive.Carries =</span> <span class="fu">sum</span>(Progressive.Carries)) <span class="sc">|&gt;</span> </span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Club) <span class="sc">|&gt;</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pro_tot =</span> <span class="fu">sum</span>(Progressive.Carries))</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> carries_plot, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_reorder</span>(Club, pro_tot),</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>                                <span class="at">y =</span> Progressive.Carries, <span class="at">fill =</span> Position)) <span class="sc">+</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Club"</span>, <span class="at">y =</span> <span class="st">"Progressive Carries"</span>, </span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Progressive Carries by Position"</span>) <span class="sc">+</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_d</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -315,14 +344,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This plot is very interesting, as it has very different trends. Southampton goes from the bottom to the top of the plot, with their defenders having the most progressive carries of any group. Defenders are able to contribute to their team in this area the most, as they can get the ball and advance it much further than an attacker. Arsenal, Nottingham Forest, and West Ham all barely rely on Attackers for advancing the ball, as it seems they prefer to move the ball with other players to set up attackers. Liverpool doesn’t seem to carry the ball much either, with a very low total compared to their league standing. Of course carrying the ball doesn’t indicate success as Southampton were relegated with 12 total point, indicating that Progressive.Carries is not a indicator of success if that is not an effective tactic for a team.</p>
 <p>Across these plots, we can see different trends seeming to depend on the tactics of a team. Overall, teams that get production out of their Midfielders tend to be successful, and their is less impact from Attackers and Defenders. However, a team like Man City who has the best Attacker impact doesn’t need as much production from their Midfield to compete. Scoring isn’t necessarily an indicator of league position either, as some high scoring and high shooting teams finished much further down the table. The Progressive Carries stat is also interesting, as for some teams like Southamton, Liverpool, Nottingham Forest, or Tottenham, it is not an indicator of success, but for others like Man City or Arsenal it is. All positions play their role on the pitch, but the Midfield appears to have the biggest impact in scoring and producing goals for team success. Finally we will look at Goals + Assists, and see which teams are the strongest.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>ag_plot <span class="ot">&lt;-</span> attacking_data <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Position, Club) <span class="sc">|&gt;</span> <span class="fu">summarise</span>(<span class="at">Goals =</span> <span class="fu">sum</span>(Goals), <span class="at">Assists =</span> <span class="fu">sum</span>(Assists), <span class="at">ag =</span> <span class="fu">sum</span>(Goals <span class="sc">+</span> Assists)) <span class="sc">|&gt;</span> <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> <span class="fu">group_by</span>(Club) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">tot_ag =</span> <span class="fu">sum</span>(Goals <span class="sc">+</span> Assists)) <span class="sc">|&gt;</span> <span class="fu">arrange</span>(<span class="fu">desc</span>(tot_ag))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>ag_plot <span class="ot">&lt;-</span> attacking_data <span class="sc">|&gt;</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Position, Club) <span class="sc">|&gt;</span> </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Goals =</span> <span class="fu">sum</span>(Goals), </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">Assists =</span> <span class="fu">sum</span>(Assists), </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">ag =</span> <span class="fu">sum</span>(Goals <span class="sc">+</span> Assists)) <span class="sc">|&gt;</span> </span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Club) <span class="sc">|&gt;</span> </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">tot_ag =</span> <span class="fu">sum</span>(Goals <span class="sc">+</span> Assists)) <span class="sc">|&gt;</span> </span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(tot_ag))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> ag_plot, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_reorder</span>(Club, tot_ag), <span class="at">y =</span> ag, <span class="at">fill =</span> Position)) <span class="sc">+</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Club"</span>, <span class="at">y =</span> <span class="st">"Goals + Assists"</span>, <span class="at">title =</span> <span class="st">"Goals + Assists by Position"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> ag_plot, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">fct_reorder</span>(Club, tot_ag), </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>                           <span class="at">y =</span> ag, <span class="at">fill =</span> Position)) <span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Club"</span>, <span class="at">y =</span> <span class="st">"Goals + Assists"</span>, </span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Goals + Assists by Position"</span>) <span class="sc">+</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_d</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -332,6 +372,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>This plot shows the dominance of the Midfield position in producing goals, with a large proportion of most teams goals and assists coming from Midfield players. Overall, the trend of being reliant and hoping for Midfield goals has shown to be important for top teams. An interesting next step to take with this analysis would be to look at data from recent and non-recent seasons to see if this trend of Midfield production is recent or has been prevalent throughout the history of the premier league.</p>
+<p>For these plots, I chose to use the Stacked Barplot to have a direct comparison both across teams, and across positions. With the position being the main category of interest, being able to see that Liverpool or Arsenal got more contribution from their Midfield was easier in this format than in a faceted barplot. If we weren’t interested in specific teams than other plots could be used to visualize differences in production by positions as the whole league, like a boxplot or dotplot. The issue here is the differences between teams, where a low scoring team like Southampton has less goals from their Midfield and Attack than Liverpool gets from their defense. Using this plot, we can take the production of each position with the context of their teams overall production and success during the season.</p>
 
 
 

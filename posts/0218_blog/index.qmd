@@ -12,6 +12,7 @@ Our question we will try and answer today is, does hosting an Olympics help a na
 To answer this question we will look at a few Olympics from different time periods and see how the host nations medal counts trended in the years surrounding their home Olympic games.
 
 ```{r}
+#| warning: false
 library(tidyverse)
 library(here)
 
@@ -107,7 +108,7 @@ usa_1904_plot <- olympic_data |> filter(slug_game == "athens-1896" |
 ggplot(data = usa_1904_plot, aes(x = slug_game, y = n)) +
   geom_col(fill = "blue") +
   coord_flip() +
-  labs(fill = "Country", x = "Olympic Host", y = "Medal Count") +
+  labs(x = "Olympic Host", y = "Medal Count") +
   theme_minimal()
 ```
 
