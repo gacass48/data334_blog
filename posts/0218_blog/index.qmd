@@ -13,6 +13,7 @@ To answer this question we will look at a few Olympics from different time perio
 
 ```{r}
 #| warning: false
+#| output: false
 library(tidyverse)
 library(here)
 
@@ -56,7 +57,8 @@ tot_plot <- olympic_data |>
 ggplot(data = tot_plot, aes(x = slug_game, y = n, fill = country_3_letter_code)) +
   geom_col() +
   coord_flip() +
-  labs(fill = "Country", x = "Olympic Host", y = "Medal Count") +
+  labs(fill = "Country", x = "Olympic Host", y = "Medal Count",
+       title = "Most Olympic Medals at a Single Games") +
   scale_fill_viridis_d() +
   theme_minimal()
 ```
@@ -76,9 +78,10 @@ st_louis_plot <- olympic_data |> filter(slug_game == "st-louis-1904") |>
 
 ```{r}
 ggplot(data = st_louis_plot, aes(x = country_3_letter_code, y = n, fill = country_3_letter_code)) +
-  geom_col() +
+  geom_col(show.legend = FALSE) +
   coord_flip() +
-  labs(fill = "Country", x = "Country", y = "Medal Count") +
+  labs(fill = "Country", x = "Country", y = "Medal Count",
+       title = "Medal Distribution for 1904 Games") +
   scale_fill_viridis_d() +
   theme_minimal()
 ```
@@ -108,7 +111,8 @@ usa_1904_plot <- olympic_data |> filter(slug_game == "athens-1896" |
 ggplot(data = usa_1904_plot, aes(x = slug_game, y = n)) +
   geom_col(fill = "blue") +
   coord_flip() +
-  labs(x = "Olympic Host", y = "Medal Count") +
+  labs(x = "Olympic Host", y = "Medal Count", 
+       title = "USA Medal Counts 1896-1912") +
   theme_minimal()
 ```
 
@@ -124,9 +128,10 @@ london_plot <- olympic_data |> filter(slug_game == "london-1908") |>
 
 ```{r}
 ggplot(data = london_plot, aes(x = country_3_letter_code, y = n, fill = country_3_letter_code)) +
-  geom_col() +
+  geom_col(show.legend = FALSE) +
   coord_flip() +
-  labs(x = "Country", y = "Medal Count") +
+  labs(x = "Country", y = "Medal Count",
+       title = "Medal Distribution 1908 Games") +
   scale_fill_viridis_d() +
   theme_minimal()
 ```
@@ -153,9 +158,10 @@ gbr_1908_plot <- olympic_data |> filter(slug_game == "paris-1900" |
 
 ```{r}
 ggplot(data = gbr_1908_plot, aes(x = slug_game, y = n)) +
-  geom_col(fill = "skyblue") +
+  geom_col(fill = "red", color = "blue") +
   coord_flip() +
-  labs(x = "Olympic Host", y = "Medal Count") +
+  labs(x = "Olympic Host", y = "Medal Count",
+       title = "GBR Medal Counts 1900-1920") +
   theme_minimal()
 ```
 
@@ -174,9 +180,10 @@ los_angeles_plot <- olympic_data |> filter(slug_game == "los-angeles-1984") |>
 
 ```{r}
 ggplot(data = los_angeles_plot, aes(x = country_3_letter_code, y = n, fill = country_3_letter_code)) +
-  geom_col() +
+  geom_col(show.legend = FALSE) +
   coord_flip() +
-  labs(fill = "Country", x = "Country", y = "Medal Count") +
+  labs(fill = "Country", x = "Country", y = "Medal Count",
+       title = "Medal Distribution 1984 Games") +
   scale_fill_viridis_d() +
   theme_minimal()
 ```
@@ -203,7 +210,8 @@ usa_1984_plot <- olympic_data |> filter(slug_game == "munich-1972" |
 ggplot(data = usa_1984_plot, aes(x = slug_game, y = n)) +
   geom_col(fill = "red") +
   coord_flip() +
-  labs(x = "Olympic Host", y = "Medal Count") +
+  labs(x = "Olympic Host", y = "Medal Count",
+       title = "USA Medal Counts 1972-1992") +
   theme_minimal()
 ```
 
@@ -230,7 +238,8 @@ gbr_2012_plot <- olympic_data |> filter(slug_game == "athens-2004" |
 ggplot(data = gbr_2012_plot, aes(x = slug_game, y = n)) +
   geom_col(fill = "red") +
   coord_flip() +
-  labs(x = "Olympic Host", y = "Medal Count") +
+  labs(x = "Olympic Host", y = "Medal Count",
+       title = "GBR Medal Counts 2004-2020") +
   theme_minimal()
 ```
 
@@ -256,11 +265,12 @@ ussr_1980_plot <- olympic_data |> filter(slug_game == "munich-1972" |
 ggplot(data = ussr_1980_plot, aes(x = slug_game, y = n)) +
   geom_col(fill = "red") +
   coord_flip() +
-  labs(x = "Olympic Host", y = "Medal Count") +
+  labs(x = "Olympic Host", y = "Medal Count",
+       title = "USSR Medal Counts 1972-1988") +
   theme_minimal()
 ```
 
-For the games surrounding the Moscow hosted games, we have less medal information due to the USSR boycotting the Los Angeles Games in response to the USA boycott of their games. Because the USA did not send athletes to Moscow, this could be seen as a reason for their increase in medal count. The USSR also dissolved before the 1992 Olympics, which makes the performance in Seoul very impressive. The Olympics were seen as a way to compete in the Cold War and prove who had the better ideology, leading to possible questionable tactics around competition. Next we will look at the 1980 Winter games, hosted by the USA in Lake Placid.
+For the games surrounding the Moscow hosted games, we have less medal information due to the USSR boycotting the Los Angeles Games in response to the USA boycott of their games. Because the USA did not send athletes to Moscow, this could be seen as a reason for their increase in medal count. Another interesting statistic is the performance of GDR, or East Germany, who also were a top 10 medal winning nation in a single Olympics during these games. The USSR and East Germany also dissolved before the 1992 Olympics, which makes the performance in Seoul very impressive when considering the climate in the USSR. The Olympics were seen as a way to compete in the Cold War and prove who had the better ideology, leading to possible questionable tactics around competition. East Germany and the USSR likey enforced widespread PED usage among their athletes in order to win more in internation athletics. Next we will look at the 1980 Winter games, hosted by the USA in Lake Placid.
 
 
 ```{r}
@@ -283,7 +293,8 @@ usa_1980_plot <- olympic_data |> filter(slug_game == "sapporo-1972" |
 ggplot(data = usa_1980_plot, aes(x = slug_game, y = n)) +
   geom_col(fill = "blue") +
   coord_flip() +
-  labs(x = "Olympic Host", y = "Medal Count") +
+  labs(x = "Olympic Host", y = "Medal Count",
+       title = "USA Medal Counts 1972-1988") +
   theme_minimal()
 ```
 
@@ -321,16 +332,44 @@ cold_1980_plot <- olympic_data |> filter(slug_game == "sapporo-1972" |
 ggplot(data = cold_1980_plot, aes(x = slug_game, y = n, fill = country_3_letter_code)) +
   geom_col(position = "dodge") +
   coord_flip() +
-  labs(x = "Olympic Host", y = "Medal Count", fill = "Country") +
+  labs(x = "Olympic Host", y = "Medal Count", fill = "Country",
+       title = "USSR vs. USA Medal Counts") +
   theme_minimal() +
   scale_fill_manual(values = c("URS" = "red", "USA" = "blue"))
 ```
 
+From this plot, we can see the levels of competition between the USSR and USA over the end of the Cold War. We can see that the USSR has an edge in both the Summer and Winter games, but seems to outperform the USA in the Winter Olympics more. It is interesting to see the Games that were boycotted by each nation, and the increase in the medal count for the host nations at these games. Because of these boycotts, the increase in medals could be coming from our hosting boost, and a decrease in the level of competition at these games. It is interesting to see how the performance of nations can be influenced by global issues, but certainly goes against the spirit of the games. 
+
+Our final plot we will look at is the Seoul 1988 Games in order to get a perspective on a nation not known for its sporting dominance in the same way as the USSR, USA, or GBR.
+
+```{r}
+seoul_1988_plot <- olympic_data |> filter(slug_game == "montreal-1976" |
+                                        slug_game == "los-angeles-1984" |
+                                        slug_game == "seoul-1988" |
+                                        slug_game == "barcelona-1992" |
+                                        slug_game == "atlanta-1996" ) |> 
+  filter(country_3_letter_code == "KOR") |>
+  group_by(slug_game) |>
+  summarise(n = n()) |>
+  mutate(slug_game = fct_relevel(slug_game, c("montreal-1976",
+                                              "los-angeles-1984",
+                                              "seoul-1988",
+                                              "barcelona-1992",
+                                              "atlanta-1996")))
+```
+
+```{r}
+ggplot(data = seoul_1988_plot, aes(x = slug_game, y = n)) +
+  geom_col(fill = "blue", color = "red") +
+  coord_flip() +
+  labs(x = "Olympic Host", y = "Medal Count",
+       title = "KOR Medal Counts 1976-1996") +
+  theme_minimal()
+```
+
+For our South Korea trend, we see clear growth leading to the 1988 Seoul games, followed by a stagnation and slow decline. The improvement from the 1976 and 1984 games is immense, but the momentum appears to slow after their hosted games. This continues to indicate that there is increased spending and public attention in athletics during and after hosting an Olympics. South Korea has a less obvious trend likely due to them being less of an athletic powerhouse, but still shows great development leading up to their games. South Korea also boycotted the 1980 Moscow games, possibly giving them more time to develop their athletics before 1984.
 
 
-
-
-
-
+For this blog, we looked into trends around a nation hosting an Olympic Games. From what we can see in our plots, there appears to be a clear trend in extra success in a hosted Olympic Games. From a biased crowd, less travel, comfortable surroundings, less competition, or other factors, athletes on the whole find a way to be more successful at Olympic Games in their home nation. Something to think about is other factors that are outside of the data we can see, like adding events that are important in the home nation, biased judging, or illegal performance enhancers. The USSR is known for possibly using PEDs for athletes and tampering with tests at the Sochi Olympics, and the 1980 Moscow Games also had rumors around them. Despite this data being about nations around the world, the plots make sense as barplots due to the time nature, and the comparisons largely being numerical when we are looking at the same year. We are more looking at the distribution of medals when looking at the earlier games. We also used the coordinate flip and position dodge at points for more readability in our plots. The labels and theme were also adjusted for readability of the plots.
 
 
