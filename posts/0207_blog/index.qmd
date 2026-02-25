@@ -1,5 +1,5 @@
 ---
-title: "2/6 Blog"
+title: "Premier League Positional Analysis"
 author: "Gavin Cassidy"
 date: "2/6/2026"
 format: html

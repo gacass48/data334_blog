@@ -1,5 +1,5 @@
 ---
-title: "2/18 Blog"
+title: "Home Olympic Medal Counts"
 author: "Gavin Cassidy"
 date: "2/18/2026"
 format: html
