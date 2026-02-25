@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: profile.jpg
+image: photo.jpg
 about:
   template: jolla
   links:
@@ -11,7 +11,5 @@ about:
       text: Github
       href: https://github.com/gacass48
 ---
-
-About this blog
 
 This blog will feature bi-weekly posts with visualizations of different datasets and analysis of these visualizations using concepts from class.
