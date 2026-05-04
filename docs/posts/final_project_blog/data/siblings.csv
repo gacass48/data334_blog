@@ -1,0 +1,338 @@
+"","sib1","sib2","sib3","sib4","sib5","sib6","Country","family","id"
+"1","Brian Sutter","Darryl Sutter","Duane Sutter","Brent Sutter","Rich Sutter","Ron Sutter","Canada","Sutter",1
+"2","Georges Boucher","Billy Boucher","Frank Boucher","Robert Boucher",NA,NA,"Canada","Boucher",2
+"3","Eric Staal","Marc Staal","Jordan Staal","Jared Staal",NA,NA,"Canada","Staal",3
+"4","Curt Bennett","Harvey Bennett","Bill Bennett",NA,NA,NA,"United States","Bennett",4
+"5","Reg Bentley","Doug Bentley","Max Bentley",NA,NA,NA,"Canada","Bentley",5
+"6","Christian Bordeleau","J.P. Bordeleau","Paulin Bordeleau",NA,NA,NA,"Canada,  France","Bordeleau",6
+"7","Neal Broten","Aaron Broten","Paul Broten",NA,NA,NA,"United States","Broten",7
+"8","Paul Comrie","Mike Comrie","Eric Comrie",NA,NA,NA,"Canada","Comrie",8
+"9","Lionel Conacher","Charlie Conacher","Roy Conacher",NA,NA,NA,"Canada","Conacher",9
+"10","Bill Cook","Bun Cook","Bud Cook",NA,NA,NA,"Canada","Cook",10
+"11","Bob Crawford","Marc Crawford","Lou Crawford",NA,NA,NA,"Canada","Crawford",11
+"12","Brian Cullen","Barry Cullen","Ray Cullen",NA,NA,NA,"Canada","Cullen",12
+"13","Peter Dineen","Gord Dineen","Kevin Dineen",NA,NA,NA,"Canada,  United States","Dineen",13
+"14","Paul Evans","Doug Evans","Kevin Evans",NA,NA,NA,"Canada","Evans",14
+"15","Wayne Gretzky","Keith Gretzky","Brent Gretzky",NA,NA,NA,"Canada","Gretzky",15
+"16","Ray Hannigan","Gord Hannigan","Pat Hannigan",NA,NA,NA,"Canada","Hannigan",16
+"17","Bryan Hextall","Jr. Hextall","Dennis Hextall",NA,NA,NA,"Canada","Hextall",17
+"18","Floyd Hillman","Larry Hillman","Wayne Hillman",NA,NA,NA,"Canada","Hillman",18
+"19","Quinn Hughes","Jack Hughes","Luke Hughes",NA,NA,NA,"United States","Hughes",19
+"20","Dave Hunter","Dale Hunter","Mark Hunter",NA,NA,NA,"Canada","Hunter",20
+"21","Quinn Hutson","Lane Hutson","Cole Hutson",NA,NA,NA,"United States","Hutson",21
+"22","Hec Kilrea","Wally Kilrea","Ken Kilrea",NA,NA,NA,"Canada","Kilrea",22
+"23","Jack Leswick","Pete Leswick","Tony Leswick",NA,NA,NA,"Canada","Leswick",23
+"24","Jamie McGinn","Tye McGinn","Brock McGinn",NA,NA,NA,"Canada","McGinn",24
+"25","Kelly Miller","Kevin Miller","Kip Miller",NA,NA,NA,"United States","Miller",25
+"26","Barclay Plager","Bob Plager","Bill Plager",NA,NA,NA,"Canada","Plager",26
+"27","Marcel Pronovost","Claude Pronovost","Jean Pronovost",NA,NA,NA,"Canada","Pronovost",27
+"28","Max Reinhart","Griffin Reinhart","Sam Reinhart",NA,NA,NA,"Canada","Reinhart",28
+"29","Rollie Rousseau","Guy Rousseau","Bobby Rousseau",NA,NA,NA,"Canada","Rousseau",29
+"30","Jack Stanfield","Fred Stanfield","Jim Stanfield",NA,NA,NA,"Canada","Stanfield",30
+"31","Marian Stastny","Peter Stastny","Anton Stastny",NA,NA,NA,"Czechoslovakia(now  Slovakia)","Stastny",31
+"32","Mike Stuart","Mark Stuart","Colin Stuart",NA,NA,NA,"United States","Stuart",32
+"33","George Allen","Viv Allen",NA,NA,NA,NA,"Canada","Allen",33
+"34","Dave Allison","Mike Allison",NA,NA,NA,NA,"Canada","Allison",34
+"35","Mikey Anderson","Joey Anderson",NA,NA,NA,NA,"United States","Anderson",35
+"36","Mikael Andersson","Niklas Andersson",NA,NA,NA,NA,"Sweden","Andersson",36
+"37","Ty Arbour","Jack Arbour",NA,NA,NA,NA,"Canada","Arbour",37
+"38","Wayne Babych","Dave Babych",NA,NA,NA,NA,"Canada","Babych",38
+"39","Morgan Barron","Justin Barron",NA,NA,NA,NA,"Canada","Barron",39
+"40","Fred Barrett","John Barrett",NA,NA,NA,NA,"Canada","Barrett",40
+"41","Frank Bathgate","Andy Bathgate",NA,NA,NA,NA,"Canada","Bathgate",41
+"42","Joe Bell","Gordie Bell",NA,NA,NA,NA,"Canada","Bell",42
+"43","Jordie Benn","Jamie Benn",NA,NA,NA,NA,"Canada","Benn",43
+"44","Jim Benning","Brian Benning",NA,NA,NA,NA,"Canada","Benning",44
+"45","Doug Berry","Ken Berry",NA,NA,NA,NA,"Canada","Berry",45
+"46","Alex Biega","Danny Biega",NA,NA,NA,NA,"Canada","Biega",46
+"47","Martin Biron","Mathieu Biron",NA,NA,NA,NA,"Canada","Biron",47
+"48","Chuck Blair","George Blair",NA,NA,NA,NA,"Canada","Blair",48
+"49","Jean Bourcier","Conrad Bourcier",NA,NA,NA,NA,"Canada","Bourcier",49
+"50","Chris Bourque","Ryan Bourque",NA,NA,NA,NA,"United States","Bourque",50
+"51","Jesper Boqvist","Adam Boqvist",NA,NA,NA,NA,"Sweden","Boqvist",51
+"52","Len Broderick","Ken Broderick",NA,NA,NA,NA,"Canada","Broderick",52
+"53","Wade Brookbank","Sheldon Brookbank",NA,NA,NA,NA,"Canada","Brookbank",53
+"54","Doug Brown","Greg Brown",NA,NA,NA,NA,"United States","Brown",54
+"55","Jack Brownschidle","Jeff Brownschidle",NA,NA,NA,NA,"United States","Brownschidle",55
+"56","Mud Bruneteau","Ed Bruneteau",NA,NA,NA,NA,"Canada","Bruneteau",56
+"57","Pavel Bure","Valeri Bure",NA,NA,NA,NA,"Russia","Bure",57
+"58","Ron Busniuk","Mike Busniuk",NA,NA,NA,NA,"Canada","Busniuk",58
+"59","Viacheslav Butsayev","Yuri Butsayev",NA,NA,NA,NA,"Russia","Butsayev",59
+"60","Jack Caffery","Terry Caffery",NA,NA,NA,NA,"Canada","Caffery",60
+"61","Drew Callander","Jock Callander",NA,NA,NA,NA,"Canada","Callander",61
+"62","Tony Camazzola","Jim Camazzola",NA,NA,NA,NA,"Canada","Camazzola",62
+"63","Jack Capuano","Dave Capuano",NA,NA,NA,NA,"United States","Capuano",63
+"64","Jack Carlson","Steve Carlson",NA,NA,NA,NA,"United States","Carlson",64
+"65","Sam Carrick","Trevor Carrick",NA,NA,NA,NA,"Canada","Carrick",65
+"66","Bill Carse","Bob Carse",NA,NA,NA,NA,"Canada","Carse",66
+"67","Noah Cates","Jackson Cates",NA,NA,NA,NA,"United States","Cates",67
+"68","Gino Cavallini","Paul Cavallini",NA,NA,NA,NA,"Canada","Cavallini",68
+"69","Don Cherry","Dick Cherry",NA,NA,NA,NA,"Canada","Cherry",69
+"70","Brandt Clarke","Graeme Clarke",NA,NA,NA,NA,"Canada","Clarke",70
+"71","Sprague Cleghorn","Odie Cleghorn",NA,NA,NA,NA,"Canada","Cleghorn",71
+"72","Sylvain Cloutier","Dan Cloutier",NA,NA,NA,NA,"Canada","Cloutier",72
+"73","Neil Colville","Mac Colville",NA,NA,NA,NA,"Canada","Colville",73
+"74","Les Costello","Murray Costello",NA,NA,NA,NA,"Canada","Costello",74
+"75","Geoff Courtnall","Russ Courtnall",NA,NA,NA,NA,"Canada","Courtnall",75
+"76","Bruce Crowder","Keith Crowder",NA,NA,NA,NA,"Canada","Crowder",76
+"77","Matt Cullen","Mark Cullen",NA,NA,NA,NA,"United States","Cullen",77
+"78","Kirby Dach","Colton Dach",NA,NA,NA,NA,"Canada","Dach",78
+"79","Nick Damore","Hank Damore",NA,NA,NA,NA,"Canada","Damore",79
+"80","Jack Darragh","Harold Darragh",NA,NA,NA,NA,"Canada","Darragh",80
+"81","Cy Denneny","Corbett Denneny",NA,NA,NA,NA,"Canada","Denneny",81
+"82","Wayne Dillon","Gary Dillon",NA,NA,NA,NA,"Canada","Dillon",82
+"83","Marcel Dionne","Gilbert Dionne",NA,NA,NA,NA,"Canada","Dionne",83
+"84","Ted Drury","Chris Drury",NA,NA,NA,NA,"United States","Drury",84
+"85","Dave Dryden","Ken Dryden",NA,NA,NA,NA,"Canada","Dryden",85
+"86","Mike Eaves","Murray Eaves",NA,NA,NA,NA,"United States,  Canada","Eaves",86
+"87","William Eklund","Victor Eklund",NA,NA,NA,NA,"Sweden","Eklund",87
+"88","Joel Eriksson Ek","Olle Eriksson Ek",NA,NA,NA,NA,"Sweden","Eriksson Ek",88
+"89","Phil Esposito","Tony Esposito",NA,NA,NA,NA,"Canada","Esposito",89
+"90","Rico Fata","Drew Fata",NA,NA,NA,NA,"Canada","Fata",90
+"91","Sergei Fedorov","Fedor Fedorov",NA,NA,NA,NA,"Russia","Fedorov",91
+"92","Denny Felsner","Brian Felsner",NA,NA,NA,NA,"United States","Felsner",92
+"93","Chris Ferraro","Peter (Twins) Ferraro",NA,NA,NA,NA,"United States","Ferraro",93
+"94","Bob Fillion","Marcel Fillion",NA,NA,NA,NA,"Canada","Fillion",94
+"95","Frank Finnigan","Eddie Finnigan",NA,NA,NA,NA,"Canada","Finnigan",95
+"96","Rusty Fitzgerald","Zack Fitzgerald",NA,NA,NA,NA,"United States","Fitzgerald",96
+"97","Haydn Fleury","Cale Fleury",NA,NA,NA,NA,"Canada","Fleury",97
+"98","Rob Flockhart","Ron Flockhart",NA,NA,NA,NA,"Canada","Flockhart",98
+"99","Nick Foligno","Marcus Foligno",NA,NA,NA,NA,"United States,  Canada","Foligno",99
+"100","Cal Foote","Nolan Foote",NA,NA,NA,NA,"United States,  Canada","Foote",100
+"101","Liam Foudy","Jean-Luc Foudy",NA,NA,NA,NA,"Canada","Foudy",101
+"102","Archie Fraser","Harvey Fraser",NA,NA,NA,NA,"Canada","Fraser",102
+"103","Dave Gardner","Paul Gardner",NA,NA,NA,NA,"Canada","Gardner",103
+"104","Bob Gassoff","Brad Gassoff",NA,NA,NA,NA,"Canada","Gassoff",104
+"105","Cameron Gaunce","Brendan Gaunce",NA,NA,NA,NA,"Canada","Gaunce",105
+"106","Morgan Geekie","Conor Geekie",NA,NA,NA,NA,"Canada","Geekie",106
+"107","Mike Gillis","Paul Gillis",NA,NA,NA,NA,"Canada","Gillis",107
+"108","Brian Gionta","Stephen Gionta",NA,NA,NA,NA,"United States","Gionta",108
+"109","Fred Glover","Howie Glover",NA,NA,NA,NA,"Canada","Glover",109
+"110","Sascha Goc","Marcel Goc",NA,NA,NA,NA,"Germany","Goc",110
+"111","John Gould","Larry Gould",NA,NA,NA,NA,"Canada","Gould",111
+"112","Don Granato","Tony Granato",NA,NA,NA,NA,"United States","Granato",112
+"113","Mikael Granlund","Markus Granlund",NA,NA,NA,NA,"Finland","Granlund",113
+"114","Gilles Gratton","Norm Gratton",NA,NA,NA,NA,"Canada","Gratton",114
+"115","Bruce Greig","Mark Greig",NA,NA,NA,NA,"Canada","Greig",115
+"116","Brendan Guhle","Kaiden Guhle",NA,NA,NA,NA,"Canada","Guhle",116
+"117","Jean Hamel","Gilles Hamel",NA,NA,NA,NA,"Canada","Hamel",117
+"118","Dougie Hamilton","Freddie Hamilton",NA,NA,NA,NA,"Canada","Hamilton",118
+"119","Emil Hanson","Oscar Hanson",NA,NA,NA,NA,"Canada","Hanson",119
+"120","Todd Harkins","Brett Harkins",NA,NA,NA,NA,"United States","Harkins",120
+"121","Kevin Hatcher","Derian Hatcher",NA,NA,NA,NA,"United States","Hatcher",121
+"122","Jimmy Hayes","Kevin Hayes",NA,NA,NA,NA,"United States","Hayes",122
+"123","Phil Hergesheimer","Wally Hergesheimer",NA,NA,NA,NA,"Canada","Hergesheimer",123
+"124","Bill Hicke","Ernie Hicke",NA,NA,NA,NA,"Canada","Hicke",124
+"125","Pat Hickey","Greg Hickey",NA,NA,NA,NA,"Canada","Hickey",125
+"126","Doug Hicks","Glenn Hicks",NA,NA,NA,NA,"Canada","Hicks",126
+"127","Akito Hirose","Taro Hirose",NA,NA,NA,NA,"Canada","Hirose",127
+"128","Cecil Hoekstra","Ed Hoekstra",NA,NA,NA,NA,"Canada","Hoekstra",128
+"129","Gary Holt","Randy Holt",NA,NA,NA,NA,"Canada","Holt",129
+"130","Marian Hossa","Marcel Hossa",NA,NA,NA,NA,"Slovakia","Hossa",130
+"131","Quinton Howden","Brett Howden",NA,NA,NA,NA,"Canada","Howden",131
+"132","Gordie Howe","Vic Howe",NA,NA,NA,NA,"Canada","Howe",132
+"133","Marty Howe","Mark Howe",NA,NA,NA,NA,"Canada,  United States","Howe",133
+"134","Ryan Hughes","Kent Hughes",NA,NA,NA,NA,"Canada","Hughes",134
+"135","Bobby Hull","Dennis Hull",NA,NA,NA,NA,"Canada","Hull",135
+"136","Matt Hunwick","Shawn Hunwick",NA,NA,NA,NA,"United States","Hunwick",136
+"137","Peter Ihnacak","Miroslav Ihnacak",NA,NA,NA,NA,"Slovakia","Ihnacak",137
+"138","Busher Jackson","Art Jackson",NA,NA,NA,NA,"Canada","Jackson",138
+"139","Joe Jerwa","Frank Jerwa",NA,NA,NA,NA,"Canada","Jerwa",139
+"140","Ryan Johansen","Lucas Johansen",NA,NA,NA,NA,"Canada","Johansen",140
+"141","Greg Johnson","Ryan Johnson",NA,NA,NA,NA,"Canada","Johnson",141
+"142","Bobby Joliat","Aurele Joliat",NA,NA,NA,NA,"Canada","Joliat",142
+"143","Bob Jones","Jim Jones",NA,NA,NA,NA,"Canada","Jones",143
+"144","Seth Jones","Caleb Jones",NA,NA,NA,NA,"United States","Jones",144
+"145","Jorgen Jonsson","Kenny Jonsson",NA,NA,NA,NA,"Sweden","Jonsson",145
+"146","Mathieu Joseph","Pierre-Olivier Joseph",NA,NA,NA,NA,"Canada","Joseph",146
+"147","Frantisek Kaberle","Tomas Kaberle",NA,NA,NA,NA,"Czech Republic","Kaberle",147
+"148","Gordon Kannegiesser","Sheldon Kannegiesser",NA,NA,NA,NA,"Canada","Kannegiesser",148
+"149","Paul Kariya","Steve Kariya",NA,NA,NA,NA,"Canada","Kariya",149
+"150","Ondrej Kase","David Kase",NA,NA,NA,NA,"Czech Republic","Kase",150
+"151","Mario Kempe","Adrian Kempe",NA,NA,NA,NA,"Sweden","Kempe",151
+"152","D.J. King","Dwight King",NA,NA,NA,NA,"Canada","King",152
+"153","Marko Kiprusoff","Miikka Kiprusoff",NA,NA,NA,NA,"Finland","Kiprusoff",153
+"154","Mike Kitchen","Bill Kitchen",NA,NA,NA,NA,"Canada","Kitchen",154
+"155","Carl Klingberg","John Klingberg",NA,NA,NA,NA,"Sweden","Klingberg",155
+"156","Saku Koivu","Mikko Koivu",NA,NA,NA,NA,"Finland","Koivu",156
+"157","John Kordic","Dan Kordic",NA,NA,NA,NA,"Canada","Kordic",157
+"158","Andrei Kostitsyn","Sergei Kostitsyn",NA,NA,NA,NA,"Belarus","Kostitsyn",158
+"159","Niklas Kronwall","Staffan Kronwall",NA,NA,NA,NA,"Sweden","Kronwall",159
+"160","Gus Kyle","Bill Kyle",NA,NA,NA,NA,"Canada","Kyle",160
+"161","Mark LaForest","Bob LaForest",NA,NA,NA,NA,"Canada","LaForest",161
+"162","Scott Langkow","Daymond Langkow",NA,NA,NA,NA,"Canada","Langkow",162
+"163","Steve Larmer","Jeff Larmer",NA,NA,NA,NA,"Canada","Larmer",163
+"164","Stephan Lebeau","Patrick Lebeau",NA,NA,NA,NA,"Canada","Lebeau",164
+"165","Greg Leeb","Brad Leeb",NA,NA,NA,NA,"Canada","Leeb",165
+"166","Bryan Lefley","Chuck Lefley",NA,NA,NA,NA,"Canada","Lefley",166
+"167","Alain Lemieux","Mario Lemieux",NA,NA,NA,NA,"Canada","Lemieux",167
+"168","Claude Lemieux","Jocelyn Lemieux",NA,NA,NA,NA,"Canada","Lemieux",168
+"169","John Leonard","Ryan Leonard",NA,NA,NA,NA,"United States","Leonard",169
+"170","Hector Lepine","Alfred Lepine",NA,NA,NA,NA,"Canada","Lepine",170
+"171","Charlie Lindgren","Ryan Lindgren",NA,NA,NA,NA,"United States","Lindgren",171
+"172","Eric Lindros","Brett Lindros",NA,NA,NA,NA,"Canada","Lindros",172
+"173","Trevor Linden","Jamie Linden",NA,NA,NA,NA,"Canada","Linden",173
+"174","Peter Loob","Hakan Loob",NA,NA,NA,NA,"Sweden","Loob",174
+"175","Clem Loughlin","Wilf Loughlin",NA,NA,NA,NA,"Canada","Loughlin",175
+"176","Fred Lowrey","Gerry Lowrey",NA,NA,NA,NA,"Canada","Lowrey",176
+"177","Henrik Lundqvist","Joel (twins) Lundqvist",NA,NA,NA,NA,"Sweden","Lundqvist",177
+"178","Lane MacDermid","Kurtis MacDermid",NA,NA,NA,NA,"Canada","MacDermid",178
+"179","Bill MacMillan","Bob MacMillan",NA,NA,NA,NA,"Canada","MacMillan",179
+"180","Frank Mahovlich","Peter Mahovlich",NA,NA,NA,NA,"Canada","Mahovlich",180
+"181","Cale Makar","Taylor Makar",NA,NA,NA,NA,"Canada","Makar",181
+"182","Chico Maki","Wayne Maki",NA,NA,NA,NA,"Canada","Maki",182
+"183","Dave Maloney","Don Maloney",NA,NA,NA,NA,"Canada","Maloney",183
+"184","Randy Manery","Kris Manery",NA,NA,NA,NA,"Canada","Manery",184
+"185","Sylvio Mantha","Georges Mantha",NA,NA,NA,NA,"Canada","Mantha",185
+"186","Jason McBain","Mike McBain",NA,NA,NA,NA,"Canada","McBain",186
+"187","Bill Sr. McCreary","Keith McCreary",NA,NA,NA,NA,"Canada","McCreary",187
+"188","Ian McKegney","Tony McKegney",NA,NA,NA,NA,"Canada","McKegney",188
+"189","Michael McLeod","Ryan McLeod",NA,NA,NA,NA,"Canada","McLeod",189
+"190","Basil McRae","Chris McRae",NA,NA,NA,NA,"Canada","McRae",190
+"191","Dick Meissner","Barrie Meissner",NA,NA,NA,NA,"Canada","Meissner",191
+"192","Hillary Menard","Howie Menard",NA,NA,NA,NA,"Canada","Menard",192
+"193","Mitch Messier","Joby Messier",NA,NA,NA,NA,"Canada","Messier",193
+"194","Paul Messier","Mark Messier",NA,NA,NA,NA,"Canada","Messier",194
+"195","Nick Metz","Don Metz",NA,NA,NA,NA,"Canada","Metz",195
+"196","Zbynek Michalek","Milan Michalek",NA,NA,NA,NA,"Czech Republic","Michalek",196
+"197","Art Michaluk","John Michaluk",NA,NA,NA,NA,"Canada","Michaluk",197
+"198","Joe Micheletti","Pat Micheletti",NA,NA,NA,NA,"United States","Micheletti",198
+"199","Jacob Middleton","Keaton Middleton",NA,NA,NA,NA,"Canada","Middleton",199
+"200","Bob Miller","Paul Miller",NA,NA,NA,NA,"United States","Miller",200
+"201","Ryan Miller","Drew Miller",NA,NA,NA,NA,"United States","Miller",201
+"202","Mike Minard","Chris Minard",NA,NA,NA,NA,"Canada","Minard",202
+"203","Dmitri Mironov","Boris Mironov",NA,NA,NA,NA,"Russia","Mironov",203
+"204","Carl Mokosak","John Mokosak",NA,NA,NA,NA,"Canada","Mokosak",204
+"205","Mike Moller","Randy Moller",NA,NA,NA,NA,"Canada","Moller",205
+"206","Steve Moore","Dominic Moore",NA,NA,NA,NA,"Canada","Moore",206
+"207","Doug Morrison","Mark Morrison",NA,NA,NA,NA,"Canada","Morrison",207
+"208","Joe Mullen","Brian Mullen",NA,NA,NA,NA,"United States","Mullen",208
+"209","Grant Mulvey","Paul Mulvey",NA,NA,NA,NA,"Canada","Mulvey",209
+"210","Bob Murdoch","Don Murdoch",NA,NA,NA,NA,"Canada","Murdoch",210
+"211","Bryan Murray","Terry Murray",NA,NA,NA,NA,"Canada","Murray",211
+"212","Brendon Nash","Riley Nash",NA,NA,NA,NA,"Canada","Nash",212
+"213","Todd Nelson","Jeff Nelson",NA,NA,NA,NA,"Canada","Nelson",213
+"214","Scott Niedermayer","Rob Niedermayer",NA,NA,NA,NA,"Canada","Niedermayer",214
+"215","Jeff Nielsen","Kirk Nielsen",NA,NA,NA,NA,"United States","Nielsen",215
+"216","Brandon Nolan","Jordan Nolan",NA,NA,NA,NA,"Canada","Nolan",216
+"217","Jeff Norton","Brad Norton",NA,NA,NA,NA,"United States","Norton",217
+"218","William Nylander","Alexander Nylander",NA,NA,NA,NA,"Sweden","Nylander",218
+"219","Selmar Odelein","Lyle Odelein",NA,NA,NA,NA,"Canada","Odelein",219
+"220","Gustav Olofsson","Fredrik Olofsson",NA,NA,NA,NA,"Sweden","Olofsson",220
+"221","Cal O'Reilly","Ryan O'Reilly",NA,NA,NA,NA,"Canada","O'Reilly",221
+"222","Danny O'Shea","Kevin O'Shea",NA,NA,NA,NA,"Canada","O'Shea",222
+"223","Rosaire Paiement","Wilf Paiement",NA,NA,NA,NA,"Canada","Paiement",223
+"224","Jay Pandolfo","Mike Pandolfo",NA,NA,NA,NA,"United States","Pandolfo",224
+"225","Larry Patey","Doug Patey",NA,NA,NA,NA,"Canada","Patey",225
+"226","Lester Patrick","Frank Patrick",NA,NA,NA,NA,"Canada","Patrick",226
+"227","Lynn Patrick","Muzz Patrick",NA,NA,NA,NA,"Canada","Patrick",227
+"228","Craig Patrick","Glenn Patrick",NA,NA,NA,NA,"United States","Patrick",228
+"229","Steve Patrick","James Patrick",NA,NA,NA,NA,"Canada","Patrick",229
+"230","Matt Pelech","Adam Pelech",NA,NA,NA,NA,"Canada","Pelech",230
+"231","Robert Petrovicky","Ronald Petrovicky",NA,NA,NA,NA,"Slovakia","Petrovicky",231
+"232","Eric Pettinger","Gord Pettinger",NA,NA,NA,NA,"Canada","Pettinger",232
+"233","Jacob Perreault","Gabe Perreault",NA,NA,NA,NA,"Canada,  United States","Perreault",233
+"234","Luke Philp","Noah Philp",NA,NA,NA,NA,"Canada","Philp",234
+"235","Roger Picard","Noel Picard",NA,NA,NA,NA,"Canada","Picard",235
+"236","Larry Playfair","Jim Playfair",NA,NA,NA,NA,"Canada","Playfair",236
+"237","Ron Plumb","Robert Plumb",NA,NA,NA,NA,"Canada","Plumb",237
+"238","Bud Poile","Don Poile",NA,NA,NA,NA,"Canada","Poile",238
+"239","Jean Potvin","Denis Potvin",NA,NA,NA,NA,"Canada","Potvin",239
+"240","Eric Prentice","Dean Prentice",NA,NA,NA,NA,"Canada","Prentice",240
+"241","Keith Primeau","Wayne Primeau",NA,NA,NA,NA,"Canada","Primeau",241
+"242","Sean Pronger","Chris Pronger",NA,NA,NA,NA,"Canada","Pronger",242
+"243","Aliaksei Protas","Ilya Protas",NA,NA,NA,NA,"Belarus","Protas",243
+"244","Taylor Pyatt","Tom Pyatt",NA,NA,NA,NA,"Canada","Pyatt",244
+"245","Bill Quackenbush","Max Quackenbush",NA,NA,NA,NA,"Canada","Quackenbush",245
+"246","Taylor Raddysh","Darren Raddysh",NA,NA,NA,NA,"Canada","Raddysh",246
+"247","Igor Radulov","Alexander Radulov",NA,NA,NA,NA,"Russia","Radulov",247
+"248","Tuukka Rask","Joonas Rask",NA,NA,NA,NA,"Finland","Rask",248
+"249","Aku Raty","Aatu Raty",NA,NA,NA,NA,"Finland","Raty",249
+"250","Chad Rau","Kyle Rau",NA,NA,NA,NA,"United States","Rau",250
+"251","Terry Reardon","Ken Reardon",NA,NA,NA,NA,"Canada","Reardon",251
+"252","Mickey Redmond","Dick Redmond",NA,NA,NA,NA,"Canada","Redmond",252
+"253","Robyn Regehr","Richie Regehr",NA,NA,NA,NA,"Canada","Regehr",253
+"254","Maurice Richard","Henri Richard",NA,NA,NA,NA,"Canada","Richard",254
+"255","Todd Richards","Travis Richards",NA,NA,NA,NA,"United States","Richards",255
+"256","Brett Ritchie","Nick Ritchie",NA,NA,NA,NA,"Canada","Ritchie",256
+"257","Shawn Rivers","Jamie Rivers",NA,NA,NA,NA,"Canada","Rivers",257
+"258","Mario Roberge","Serge Roberge",NA,NA,NA,NA,"Canada","Roberge",258
+"259","Doug Roberts","Gordie Roberts",NA,NA,NA,NA,"United States","Roberts",259
+"260","Geordie Robertson","Torrie Robertson",NA,NA,NA,NA,"Canada","Robertson",260
+"261","Nick Robertson","Jason Robertson",NA,NA,NA,NA,"United States","Robertson",261
+"262","Buddy Robinson","Eric Robinson",NA,NA,NA,NA,"United States","Robinson",262
+"263","Larry Robinson","Moe Robinson",NA,NA,NA,NA,"Canada","Robinson",263
+"264","Des Roche","Earl Roche",NA,NA,NA,NA,"Canada","Roche",264
+"265","Ron Rolston","Brian Rolston",NA,NA,NA,NA,"Canada","Rolston",265
+"266","Patrick Roy","Stephane Roy",NA,NA,NA,NA,"Canada","Roy",266
+"267","Kris Russell","Ryan (twins) Russell",NA,NA,NA,NA,"Canada","Russell",267
+"268","Jarkko Ruutu","Tuomo Ruutu",NA,NA,NA,NA,"Finland","Ruutu",268
+"269","Joe Sacco","David Sacco",NA,NA,NA,NA,"United States","Sacco",269
+"270","Philip Samuelsson","Henrik Samuelsson",NA,NA,NA,NA,"United States","Samuelsson",270
+"271","Linus Sandin","Rasmus Sandin",NA,NA,NA,NA,"Sweden","Sandin",271
+"272","Kurt Sauer","Michael Sauer",NA,NA,NA,NA,"United States","Sauer",272
+"273","Bob Sauve","Jean-Francois Sauve",NA,NA,NA,NA,"Canada","Sauve",273
+"274","Peter Schaefer","Nolan Schaefer",NA,NA,NA,NA,"Canada","Schaefer",274
+"275","Luke Schenn","Brayden Schenn",NA,NA,NA,NA,"Canada","Schenn",275
+"276","Jordan Schmaltz","Nick Schmaltz",NA,NA,NA,NA,"United States","Schmaltz",276
+"277","Cliff Schmautz","Bobby Schmautz",NA,NA,NA,NA,"Canada","Schmautz",277
+"278","Jack Schmidt","Otto Schmidt",NA,NA,NA,NA,"Canada","Schmidt",278
+"279","Ron Schock","Danny Schock",NA,NA,NA,NA,"Canada","Schock",279
+"280","Henrik Sedin","Daniel (twins) Sedin",NA,NA,NA,NA,"Sweden","Sedin",280
+"281","Rod Seiling","Ric Seiling",NA,NA,NA,NA,"Canada","Seiling",281
+"282","Tim Sestito","Tom Sestito",NA,NA,NA,NA,"United States","Sestito",282
+"283","Darryl Shannon","Darrin Shannon",NA,NA,NA,NA,"Canada","Shannon",283
+"284","Timothy Sheehy","Neil Sheehy",NA,NA,NA,NA,"United States","Sheehy",284
+"285","Johnny Sheppard","Frank Sheppard",NA,NA,NA,NA,"Canada","Sheppard",285
+"286","Kiefer Sherwood","Kole Sherwood",NA,NA,NA,NA,"United States","Sherwood",286
+"287","Drew Shore","Nick Shore",NA,NA,NA,NA,"United States","Shore",287
+"288","Owen Sillinger","Cole Sillinger",NA,NA,NA,NA,"Canada","Sillinger",288
+"289","Cully Simon","Thain Simon",NA,NA,NA,NA,"Canada","Simon",289
+"290","Jordan Sigalet","Jonathan Sigalet",NA,NA,NA,NA,"Canada","Sigalet",290
+"291","Jaccob Slavin","Josiah Slavin",NA,NA,NA,NA,"United States","Slavin",291
+"292","Brendan Smith","Reilly Smith",NA,NA,NA,NA,"Canada","Smith",292
+"293","Brian Smith","Gary Smith",NA,NA,NA,NA,"Canada","Smith",293
+"294","Gemel Smith","Givani Smith",NA,NA,NA,NA,"Canada","Smith",294
+"295","Gord Smith","Billy Smith",NA,NA,NA,NA,"Canada","Smith",295
+"296","Kenny Smith","Don Smith",NA,NA,NA,NA,"Canada","Smith",296
+"297","Kevin Smyth","Ryan Smyth",NA,NA,NA,NA,"Canada","Smyth",297
+"298","Gene Sobchuk","Dennis Sobchuk",NA,NA,NA,NA,"Canada","Sobchuk",298
+"299","Arvid Soderblom","Elmer Soderblom",NA,NA,NA,NA,"Sweden","Soderblom",299
+"300","Ed Stankiewicz","Myron Stankiewicz",NA,NA,NA,NA,"Canada","Stankiewicz",300
+"301","Yan Stastny","Paul Stastny",NA,NA,NA,NA,"United States","Stastny",301
+"302","Scott Stevens","Mike Stevens",NA,NA,NA,NA,"Canada","Stevens",302
+"303","Anthony Stewart","Chris Stewart",NA,NA,NA,NA,"Canada","Stewart",303
+"304","Michael Stone","Mark Stone",NA,NA,NA,NA,"Canada","Stone",304
+"305","Ryan Strome","Dylan Strome",NA,NA,NA,NA,"Canada","Strome",305
+"306","P.K. Subban","Malcolm Subban",NA,NA,NA,NA,"Canada","Subban",306
+"307","Frank Sullivan","Peter Sullivan",NA,NA,NA,NA,"Canada","Sullivan",307
+"308","Patrik Sundstrom","Peter (twins) Sundstrom",NA,NA,NA,NA,"Sweden","Sundstrom",308
+"309","Nick Suzuki","Ryan Suzuki",NA,NA,NA,NA,"Canada","Suzuki",309
+"310","Evgeny Svechnikov","Andrei Svechnikov",NA,NA,NA,NA,"Russia","Svechnikov",310
+"311","Lee Sweatt","Bill Sweatt",NA,NA,NA,NA,"United States","Sweatt",311
+"312","Chris Tanev","Brandon Tanev",NA,NA,NA,NA,"Canada","Tanev",312
+"313","Tim Taylor","Chris Taylor",NA,NA,NA,NA,"Canada","Taylor",313
+"314","Skip Teal","Vic Teal",NA,NA,NA,NA,"Canada","Teal",314
+"315","Tage Thompson","Tyce Thompson",NA,NA,NA,NA,"United States","Thompson",315
+"316","Tiny Thompson","Paul Thompson",NA,NA,NA,NA,"Canada","Thompson",316
+"317","Kimmo Timonen","Jussi Timonen",NA,NA,NA,NA,"Finland","Timonen",317
+"318","Daniel Tjarnqvist","Mathias Tjarnqvist",NA,NA,NA,NA,"Sweden","Tjarnqvist",318
+"319","Matthew Tkachuk","Brady Tkachuk",NA,NA,NA,NA,"United States","Tkachuk",319
+"320","Zellio Toppazzini","Jerry Toppazzini",NA,NA,NA,NA,"Canada","Toppazzini",320
+"321","Bryan Trottier","Rocky Trottier",NA,NA,NA,NA,"Canada","Trottier",321
+"322","Sylvain Turgeon","Pierre Turgeon",NA,NA,NA,NA,"Canada","Turgeon",322
+"323","James van Riemsdyk","Trevor van Riemsdyk",NA,NA,NA,NA,"United States","van Riemsdyk",323
+"324","Pete Vandermeer","Jim Vandermeer",NA,NA,NA,NA,"Canada","Vandermeer",324
+"325","Jan Vopat","Roman Vopat",NA,NA,NA,NA,"Czech Republic","Vopat",325
+"326","Grant Warwick","Bill Warwick",NA,NA,NA,NA,"Canada","Warwick",326
+"327","Joe Watson","Jimmy Watson",NA,NA,NA,NA,"Canada","Watson",327
+"328","Kyle Wellwood","Eric Wellwood",NA,NA,NA,NA,"Canada","Wellwood",328
+"329","Blake Wesley","Glen Wesley",NA,NA,NA,NA,"Canada","Wesley",329
+"330","Fred Williams","Gord Williams",NA,NA,NA,NA,"Canada","Williams",330
+"331","Tom Williams","Butch Williams",NA,NA,NA,NA,"United States","Williams",331
+"332","Johnny Wilson","Larry Wilson",NA,NA,NA,NA,"Canada","Wilson",332
+"333","Murray Wilson","Doug Wilson",NA,NA,NA,NA,"Canada","Wilson",333
+"334","Tyler Wotherspoon","Parker Wotherspoon",NA,NA,NA,NA,"Canada","Wotherspoon",334
+"335","Arber Xhekaj","Florian Xhekaj",NA,NA,NA,NA,"Canada","Xhekaj",335
+"336","Gary Yaremchuk","Ken Yaremchuk",NA,NA,NA,NA,"Canada","Yaremchuk",336
+"337","Steven Zalewski","Mike Zalewski",NA,NA,NA,NA,"United States","Zalewski",337
